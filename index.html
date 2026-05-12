@@ -3,83 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENTAL-SED | Early Warning System</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Proyecto MENTAL-SED | Universidad de Valladolid</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         :root {
-            --primary: #0f172a; /* Azul casi negro, muy elegante */
-            --accent: #2563eb;
-            --font-family: 'Plus Jakarta Sans', sans-serif;
+            --primary: #0055b3; /* Azul académico oscuro */
+            --spacing: 2rem;
         }
-        body { font-family: var(--font-family); background-color: #ffffff; color: #1e293b; }
-        
-        nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid #f1f5f9; position: sticky; top: 0; z-index: 1000; }
-        nav strong { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; }
-
-        .hero-warn {
-            padding: 8rem 0 5rem;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .hero-warn h1 { font-weight: 800; font-size: 3.5rem; line-height: 1.1; letter-spacing: -2px; margin-bottom: 1.5rem; color: var(--primary); }
-        .hero-warn p { font-size: 1.4rem; line-height: 1.6; color: #64748b; font-weight: 300; }
-
-        .btn-main { background: var(--primary); border: none; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; }
-        .btn-main:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-        .section-light { padding: 4rem 0; border-top: 1px solid #f1f5f9; }
-        .footer-logos { padding: 4rem 0; background: #f8fafc; border-top: 1px solid #f1f5f9; }
-        .logo-img { filter: grayscale(100%); opacity: 0.7; transition: all 0.4s; max-width: 800px; display: block; margin: 0 auto; }
-        .logo-img:hover { filter: grayscale(0%); opacity: 1; }
-
-        /* Estilo para links de navegación */
-        nav a { color: #475569 !important; font-weight: 500; }
-        nav a:hover { color: var(--accent) !important; }
+        body { font-size: 18px; }
+        nav { border-bottom: 1px solid #e5e5e5; background: white; }
+        .hero-sobrio { padding: 4rem 0; background-color: #fcfcfc; border-bottom: 1px solid #eee; }
+        .content-section { padding: 3rem 0; }
+        footer { background: #ffffff; border-top: 1px solid #e5e5e5; padding: 3rem 0; margin-top: 4rem; }
+        .logo-band { max-width: 900px; margin: 0 auto; display: block; }
+        h1 { color: #1a1a1a; }
+        h2 { color: #4a4a4a; font-weight: 400; }
+        [role="button"], 
+        [role="button"]:hover {
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: #ffffff !important; /* Texto en blanco puro */
+        text-decoration: none;
+        font-weight: 600;
+    }
     </style>
 </head>
 <body>
 
     <nav class="container-fluid">
-        <ul><li><strong>MENTAL-SED</strong></li></ul>
         <ul>
-            <li><a href="index.html">Proyecto</a></li>
+            <li><strong>MENTALSED</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#investigacion">Investigación</a></li>
             <li><a href="publicaciones.html">Publicaciones</a></li>
-            <li><a href="https://app.mentalsed.org" role="button" class="btn-main" style="color: white !important;">Acceso Profesionales</a></li>
+            <li><a href="https://app.mentalsed.org" role="button" class="outline">Acceso Profesionales</a></li>
         </ul>
     </nav>
 
-    <header class="hero-warn">
+    <header class="hero-sobrio">
         <div class="container">
-            <h1>Hacia un sistema de alerta temprana en Salud Mental.</h1>
-            <p>
-                El proyecto <strong>MENTAL-SED</strong>strong> tiene como objetivo fundamental profundizar en el conocimiento de los problemas de salud mental y su manifestación en personas con discapacidad intelectual (PCDI).
-            </p>
+            <hgroup>
+                <h1>Salud Mental en Personas con Discapacidad Intelectual</h1>
+                <h2>Evaluación, Diagnóstico y Prevención mediante un Sistema de Evaluación Digital</h2>
+            </hgroup>
+            <p>Proyecto de investigación dirigido por <strong>Jairo Rodríguez Medina</strong> y <strong>Clara González Sanguino</strong> de la Universidad de Valladolid.</p>
         </div>
     </header>
 
-    <main class="container">
-        <div class="grid section-light">
+    <main class="container content-section">
+        <div class="grid">
             <div>
-                <h3 style="font-weight: 700;">El Desafío</h3>
-                <p>Los problemas de salud mental en personas con discapacidad intelectual suelen pasar desapercibidos debido a barreras comunicativas y diagnósticas.</p>
+                <h3>Sobre el Proyecto</h3>
+                <p>El proyecto <strong>MENTALSED</strong> tiene como objetivo fundamental profundizar en el conocimiento de los problemas de salud mental y su manifestación en personas con discapacidad intelectual (PCDI).</p>
             </div>
             <div>
-                <h3 style="font-weight: 700;">La Propuesta</h3>
-                <p>Un sistema de evaluación integral basado en metodología <strong>EMA</strong> y análisis funcional para identificar situaciones de riesgo.</p>
+                <h3>Metodología</h3>
+                <p>Estamos desarrollando soluciones digitales avanzadas, incluyendo metodología <strong>EMA</strong> (Ecological Momentary Assessment) y la monitorización de <strong>biomarcadores</strong> de variabilidad de la frecuencia cardíaca para una detección precisa y adaptada.</p>
             </div>
         </div>
+
+        <hr>
+
+        <section id="investigacion" style="margin-top: 2rem;">
+            <h3>Ejes de Investigación</h3>
+            <ul>
+                <li>Análisis de instrumentos de evaluación y diagnóstico en PCDI.</li>
+                <li>Identificación de necesidades de profesionales y usuarios en entornos reales.</li>
+                <li>Desarrollo de modelos predictivos mediante análisis de patrones de comportamiento.</li>
+                <li>Colaboración estratégica con entidades del tercer sector como Plena Inclusión Castilla y León.</li>
+            </ul>
+        </section>
     </main>
 
-    <footer class="footer-logos">
-        <div class="container" style="text-align: center;">
-            <img src="public/logos-completos.svg" alt="Entidades Financiadoras" class="logo-img">
-            <p style="margin-top: 2rem; font-size: 0.9rem; color: #94a3b8;">
-                Investigadores Principales: Jairo Rodríguez Medina & Clara González Sanguino<br>
-                © 2023-2026 Universidad de Valladolid. Ref: Convocatoria 2023.
-                <p>Proyecto PID2023-150190OA-I00 financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE.</p>
-            </p>
+    <footer>
+        <div class="container">
+            <img src="public/logos-completos.svg" alt="Logos institucionales de financiación y colaboración" class="logo-band">
+            <div style="text-align: center; margin-top: 2rem;">
+                <small>
+                    Proyecto PID2023-150190OA-I00 financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE.
+                </small>
+            </div>
         </div>
     </footer>
 
