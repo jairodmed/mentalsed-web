@@ -3,37 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MENTAL-SED - Salud Mental en Discapacidad Intelectual </title>
+    <title>MENTALSED | Innovación en Salud Mental y Discapacidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root {
+            --primary: #2563eb; /* Azul tecnológico */
+            --secondary: #64748b;
+            --font-family: 'Inter', sans-serif;
+        }
+        body { font-family: var(--font-family); }
+        
+        /* Hero Section Estilizada */
+        .hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        .hero h1 { font-weight: 800; color: #1e293b; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.25rem; color: #475569; max-width: 800px; margin: 0 auto 2rem; }
+
+        /* Cards para los pilares del proyecto */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h4 { color: var(--primary); margin-bottom: 0.5rem; }
+
+        /* Botón Acceso Profesionales */
+        .btn-shiny {
+            background-color: var(--primary);
+            border: none;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Footer logos */
+        .logos-footer {
+            background: white;
+            padding: 4rem 0;
+            margin-top: 5rem;
+        }
+        .logos-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            opacity: 0.9;
+            filter: grayscale(20%);
+        }
+    </style>
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul><li><strong>MENTALSED</strong></li></ul>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Investigación</a></li>
-            <li><a href="https://app.mentalsed.org" role="button">Acceso Profesionales</a></li>
-        </ul>
-    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <hgroup>
+                <h1>MENTALSED</h1>
+                <p>Salud Mental en Personas con Discapacidad Intelectual: Evaluación, Diagnóstico y Prevención mediante un Sistema Digital de Alerta Temprana.</p>
+            </hgroup>
+            <div style="margin-top: 2rem;">
+                <a href="https://app.mentalsed.org" role="button" class="btn-shiny">Acceso Profesionales (Portal Shiny)</a>
+            </div>
+        </div>
+    </header>
+
     <main class="container">
-        <hgroup>
-            <h1>Salud Mental en Personas con Discapacidad Intelectual</h1>
-            <h2>Evaluación, Diagnóstico y Prevención mediante un Sistema de Evaluación Digital</h2>
-        </hgroup>
-        <p>Proyecto de investigación liderado por <strong>Jairo Rodríguez Medina</strong> y <strong>Clara González Sanguino</strong> de la Universidad de Valladolid.</p>
-        
-        <section id="objetivos">
-            <h3>Objetivo del Proyecto</h3>
-            <p>Diseñar un sistema digital de evaluación global de la salud mental y el bienestar emocional de las PCDI que permita monitorizar e identificar señales de "alerta temprana".</p>
+        <section>
+            <h2 style="text-align: center; margin-bottom: 3rem;">Innovación al servicio del bienestar</h2>
+            <div class="tech-grid">
+                <div class="card">
+                    <h4>Sistema Digital</h4>
+                    <p>Transformación digital de los procesos de evaluación mediante un sistema integral de registro.</p>
+                </div>
+                <div class="card">
+                    <h4>Metodología EMA</h4>
+                    <p>Evaluación ecológica momentánea para identificar situaciones de riesgo en tiempo real.</p>
+                </div>
+                <div class="card">
+                    <h4>Biomarcadores</h4>
+                    <p>Monitorización de la variabilidad de la frecuencia cardíaca (HRV) para un diagnóstico preciso.</p>
+                </div>
+                <div class="card">
+                    <h4>Liderazgo</h4>
+                    <p>Proyecto dirigido por Jairo Rodríguez Medina y Clara González Sanguino (UVa).</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 5rem; text-align: center;">
+            <h3>Colaboración Institucional</h3>
+            <p>Trabajamos junto a entidades del tercer sector para mejorar la calidad de vida y la inclusión socialde las personas con trastornos del neurodesarrollo.</p>
         </section>
     </main>
-    <footer class="container">
-    <div style="text-align: center;">
-        <img src="public/MICIU+Cofinanciado+AEI.svg" alt="Logos institucionales MENTALSED" style="width: 100%; max-width: 900px; height: auto;">
-        <p style="margin-top: 1rem;">
-            Proyecto PID2023-150190OA-I00 financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE.
-        </p>
-    </div>
-</footer>
+
+    <footer class="logos-footer">
+        <div class="container">
+            <div class="logos-container">
+                <img src="public/logos-completos.svg" alt="Logos Ministerio de Ciencia, Unión Europea, UVa y Plena Inclusión" style="width: 100%; height: auto;">
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: #64748b;">
+                <small>
+                    Proyecto PID2023-150190OA-I00 financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE. 
+                </small>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
