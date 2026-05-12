@@ -18,11 +18,14 @@
         .logo-band { max-width: 900px; margin: 0 auto; display: block; }
         h1 { color: #1a1a1a; }
         h2 { color: #4a4a4a; font-weight: 400; }
-        [role="button"] {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            font-weight: 600;
-        }
+        [role="button"], 
+        [role="button"]:hover {
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: #ffffff !important; /* Texto en blanco puro */
+        text-decoration: none;
+        font-weight: 600;
+    }
     </style>
 </head>
 <body>
