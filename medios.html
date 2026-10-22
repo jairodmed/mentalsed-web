@@ -41,10 +41,17 @@
         }
         .media-title { 
             font-weight: 700; 
-            color: #1a1a1a; 
             font-size: 1.2rem; 
             line-height: 1.35;
             margin-bottom: 0.4rem; 
+        }
+        .media-title a {
+            color: #1a1a1a; 
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        .media-title a:hover {
+            color: #0055b3; /* Al pasar el ratón se vuelve azul */
         }
         .media-desc {
             font-size: 0.95rem;
@@ -89,5 +96,43 @@
             <!-- Noticia 1: Diario de Castilla y León -->
             <article class="media-item">
                 <div class="media-meta">18 de febrero de 2025 | Diario de Castilla y León (Innovadores)</div>
-                <div class="media-title">IA al servicio de la salud mental</div>
-                <div class="media-desc">Reportaje cent
+                <div class="media-title">
+                    <a href="https://www.diariodecastillayleon.es/innovadores/250218/97392/ia-servicio-salud-mental.html" target="_blank" rel="noopener noreferrer">
+                        IA al servicio de la salud mental
+                    </a>
+                </div>
+                <div class="media-desc">Reportaje centrado en el desarrollo de soluciones tecnológicas, modelos computacionales e inteligencia artificial para la evaluación objetiva y temprana de la salud mental en personas con discapacidad intelectual.</div>
+                <a href="https://www.diariodecastillayleon.es/innovadores/250218/97392/ia-servicio-salud-mental.html" target="_blank" rel="noopener noreferrer" class="media-link">Leer artículo completo en Diario de Castilla y León →</a>
+            </article>
+
+            <!-- Noticia 2: Gabinete de Comunicación UVa -->
+            <article class="media-item">
+                <div class="media-meta">Gabinete de Comunicación UVa</div>
+                <div class="media-title">
+                    <a href="https://comunicacion.uva.es/detalle/La-UVa-y-Plena-inclusion-CyL-impulsan-un-ciclo-de-seminarios-sobre-salud-mental-y-discapacidad-intelectual-dirigido-al-alumnado-del-Grado-en-Educacion-Infantil/" target="_blank" rel="noopener noreferrer">
+                        La UVa y Plena inclusión CyL impulsan un ciclo de seminarios sobre salud mental y discapacidad intelectual dirigido al alumnado del Grado en Educación Infantil
+                    </a>
+                </div>
+                <div class="media-desc">Cobertura institucional de las acciones formativas y de sensibilización desarrolladas en el marco de la alianza estratégica entre la Universidad de Valladolid y Plena Inclusión Castilla y León.</div>
+                <a href="https://comunicacion.uva.es/detalle/La-UVa-y-Plena-inclusion-CyL-impulsan-un-ciclo-de-seminarios-sobre-salud-mental-y-discapacidad-intelectual-dirigido-al-alumnado-del-Grado-en-Educacion-Infantil/" target="_blank" rel="noopener noreferrer" class="media-link">Ver comunicado oficial de la UVa →</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <img src="public/logos-completos.svg" alt="Logos institucionales" class="logo-band">
+            <div style="text-align: center; margin-top: 2rem;">
+                <small>
+                    Este proyecto ha sido financiado por el <strong>Ministerio de Ciencia, Innovación y Universidades</strong> 
+                    y cofinanciado por la <strong>Unión Europea</strong>. <br>
+                    Ref: Convocatoria 2023 - Proyectos de Generación de Conocimiento.
+                </small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
